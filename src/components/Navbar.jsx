@@ -3,7 +3,9 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-    <h1>Top Courses</h1>
+   <nav className="  py-4">
+        <h1 className="text-3xl font-bold text-center  gradient-text">Top Courses</h1>
+      </nav>
     </div>
   )
 }

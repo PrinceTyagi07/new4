@@ -8,11 +8,13 @@ const Cards = (props) => {
         let allCourses = [];
         console.log("hello")
         console.log(courses)
-        Object.values(courses).forEach((array) => {
-            array.forEach((coursedata) => {
-                allCourses.push(coursedata);
-            })
-        })
+        if (courses) {
+            Object.values(courses).forEach((array) => {
+                array.forEach((coursedata) => {
+                    allCourses.push(coursedata);
+                });
+            });
+        }
         return allCourses;
     }
     return (
